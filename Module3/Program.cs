@@ -6,13 +6,15 @@ namespace Module3
     {
         static void Main(string[] args)
         {
-            const string MyName = "Дмитрий";
-            
-            Console.WriteLine(MyName);
+            string MyName = "Дмитрий";
+            byte MyAge = 31;
+            bool HaveIApet = false;
+            double MyShoeSize = 44.5;
 
-            Console.WriteLine("Привет, мир");
-            Console.WriteLine("Мне 31 год");
-            Console.WriteLine("Меня зовут Дмитрий");
+            Console.WriteLine("Меня зовут " + MyName);
+            Console.WriteLine("Мне " + MyAge);
+            Console.WriteLine("У меня есть домашнее животное? " + HaveIApet);
+            Console.WriteLine("Мой размер обуви " + MyShoeSize);
 
             Console.ReadKey();
         }

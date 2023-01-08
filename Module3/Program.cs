@@ -6,7 +6,11 @@ namespace Module3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string myName = "Дмитрий";
+
+            Console.WriteLine(myName);
+
+            Console.ReadKey();
         }
     }
 }

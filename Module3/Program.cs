@@ -4,21 +4,17 @@ namespace Module3
 {
     class Program
     {
-        enum DaysofWeek : byte
+        enum Semaphore : int
         {
-            Monday = 1,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday,
-            Sunday
+            Red = 100,
+            Yellow = 200,
+            Green = 300
         }
         static void Main(string[] args)
         {
-            DayOfWeek FavoriteDay = DayOfWeek.Sunday; ;
+            Semaphore SemaphoreStage = Semaphore.Green; ;
             
-            Console.WriteLine($"My favorite day is {FavoriteDay}");
+            Console.WriteLine($"Semaphore color stage is {SemaphoreStage}");
             Console.ReadKey();
         }
         

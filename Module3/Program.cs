@@ -6,22 +6,11 @@ namespace Module3
     {
         static void Main(string[] args)
         {
-            string MyName = "Дмитрий";
-            Console.WriteLine("Привет, мир");
-            Console.WriteLine();
-
-            Console.WriteLine("Меня зовут {0}", MyName);
-            Console.WriteLine();
-
-            Console.WriteLine("Меня зовут {0}", "Дима");
-            Console.WriteLine();
-
-            byte age = 31;
-            byte weight = 250;
-            Console.WriteLine("Возраст {0} \nВес {1}", age, weight);
-            Console.WriteLine();
-
-            Console.WriteLine($"Имя - {MyName}. Возраст - {age}. Вес - {weight}");
+            string CompName = "Dell";
+            Console.WriteLine($"Привет человек! Меня зовут {CompName}");
+            Console.Write("А как зовут тебя? ");
+            string MyName = Console.ReadLine();
+            Console.Write("Рад знакомству {0}", MyName);
 
             Console.ReadKey();
         }

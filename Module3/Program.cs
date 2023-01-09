@@ -4,11 +4,12 @@ namespace Module3
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            double result = 10 % 3;
-            Console.Write("Value: {0}", result);
-
+            Console.Write("Введи свой возраст: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Твой возраст {age}");
             Console.ReadKey();
         }
         

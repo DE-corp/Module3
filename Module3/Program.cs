@@ -8,7 +8,7 @@ namespace Module3
         static void Main(string[] args)
         {
             Console.Write("Введи свой возраст: ");
-            int age = Convert.ToInt32(Console.ReadLine());
+            int age = int.Parse(Console.ReadLine());
             Console.WriteLine($"Твой возраст {age}");
             Console.ReadKey();
         }

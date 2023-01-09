@@ -7,10 +7,12 @@ namespace Module3
         
         static void Main(string[] args)
         {
-            Console.Write("Введи свой возраст: ");
-            int age;
-            int.TryParse(Console.ReadLine(), out age);
-            Console.WriteLine($"Твой возраст {age}");
+            Console.Write("Введи свое имя: ");
+            string Name = Console.ReadLine();
+            Console.Write("Сколько лет: ");
+            int Age = checked((byte)int.Parse(Console.ReadLine()));
+
+            Console.WriteLine($"Тебя зовут {Name}, тебе {Age}");
             Console.ReadKey();
         }
         

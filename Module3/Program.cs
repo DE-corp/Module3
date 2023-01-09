@@ -4,19 +4,23 @@ namespace Module3
 {
     class Program
     {
+        enum DaysofWeek : byte
+        {
+            Monday = 1,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
         static void Main(string[] args)
         {
-            string MyName = "Дмитрий";
-            byte MyAge = 31;
-            bool HaveIApet = false;
-            double MyShoeSize = 44.5;
-
-            Console.WriteLine("Меня зовут " + MyName);
-            Console.WriteLine("Мне " + MyAge);
-            Console.WriteLine("У меня есть домашнее животное? " + HaveIApet);
-            Console.WriteLine("Мой размер обуви " + MyShoeSize);
-
+            DayOfWeek FavoriteDay = DayOfWeek.Sunday; ;
+            
+            Console.WriteLine($"My favorite day is {FavoriteDay}");
             Console.ReadKey();
         }
+        
     }
 }
